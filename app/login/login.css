@@ -1,0 +1,19 @@
+h1{
+	color: #00695c;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3{
+	font-famly: serif;
+	font-weight: bold;
+	text-align: center;
+}
+
+.form{
+	margin: 50px;
+}
+
+.btn{
+	margin:20px;
+}

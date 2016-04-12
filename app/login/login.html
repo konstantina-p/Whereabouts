@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="login\login.css">
+</head>
+<body>
+
+<header class="container">
+  <div class="row">
+    <h1 class="title"> Whereabouts Screens</h1>
+  </div>
+</header>
+
+<div class="row">
+	<h3>Log in</h3>
+</div>
+
+<div  ng-controller="loginCtrl" class="form">
+<div class="col-sm-4  col-sm-offset-4 input-group">
+  <span  id="Email"></span>
+  <input type="text" ng-model="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+</div>
+<div class="col-sm-4 col-sm-offset-4 input-group">
+  <span  id="Password"></span>
+  <input type="password" ng-model="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+</div>
+<div class="col-sm-offset-">
+<button ng-click="check()";" type="button" class="btn btn-default btn-lg">Login </button>
+</div>
+</div>
+</body>
+</html>
+
+
+
+

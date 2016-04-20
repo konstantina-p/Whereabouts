@@ -4,9 +4,13 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.login',
-  'myApp.view2',
+  'myApp.home',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/login'});
+ 	$routeProvider.when('/', {
+ 		controller: 'HomeCtrl',
+ 		templateUrl: 'home/home.html'
+ 	})
+	$routeProvider.otherwise({redirectTo: '/login'});
 }]);

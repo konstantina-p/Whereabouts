@@ -6,6 +6,9 @@
   <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
  <script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js"></script>
  <script src="https://cdn.firebase.com/js/simple-login/1.6.2/firebase-simple-login.js"></script>
+ <script src="https://cdn.firebase.com/js/client/1.1.0/firebase.js"></script>
+ <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+
 <link rel="stylesheet" href="login\login.css">
 </head>
 <body ng-controller="loginCtrl">
@@ -29,8 +32,9 @@
   <span  id="Password"></span>
   <input type="password" ng-model="user.password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
 </div>
-<div class="col-sm-offset-">
+<div class="col-sm-offset-5">
 <button ng-click="SignIn($event)";" type="button" class="btn btn-default btn-lg">Login </button>
+<button ng-click="SignUp($event)";" type="button" class="btn btn-default btn-lg">Sign up </button>
 </div>
 </div>
 </body>

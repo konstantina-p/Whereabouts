@@ -1,5 +1,45 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<!DOCTYPE html>
+<html>
+<head>
+	<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+	<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+	<script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/0.8.0/angularfire.min.js"></script>
+	<script src="https://cdn.firebase.com/js/simple-login/1.6.2/firebase-simple-login.js"></script>
+	<script src="https://cdn.firebase.com/js/client/1.1.0/firebase.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+	<link rel="stylesheet" href="home\home.css">
+</head>
+<body ng-controller="loginCtrl">
+
+<header class="container">
+  <div class="row">
+    <h1 class="title"> Whereabouts Screens</h1>
+  </div>
+</header>
+
+<div class="row">
+	<h3>Log in</h3>
+</div>
+
+<div  ng-controller="loginCtrl" class="form">
+<div class="col-sm-4  col-sm-offset-4 input-group">
+  <span  id="Email"></span>
+  <input type="email" ng-model="user.email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+</div>
+<div class="col-sm-4 col-sm-offset-4 input-group">
+  <span  id="Password"></span>
+  <input type="password" ng-model="user.password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+</div>
+<div class="col-sm-offset-5">
+<button ng-click="SignIn($event)";" type="button" class="btn btn-default btn-lg">Login </button>
+<button ng-click="SignUp($event)";" type="button" class="btn btn-default btn-lg">Sign up </button>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+

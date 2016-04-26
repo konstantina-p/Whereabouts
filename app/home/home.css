@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+} 
+
+h1{
+	color: #00695c;
+	font-weight: bold;
+	text-align: center;
+}
+
+#new{
+	color: white;
+	margin:15px;
+	font-size: 48px;
+}
+

@@ -9,6 +9,13 @@ angular.module('myApp.home', ['ngRoute'])
   });
 }])
 
-.controller('HomeCtrl', [function() {
+.controller('HomeCtrl', ['$scope', '$location', function($scope, $location) {
+	console.log("homeCtrl");
+//	$scope.new = function(event){
+//		console.log("new clicked");
+//	}
 
+	$scope.new = function ( path ) {
+  		$location.path( path );
+	};
 }]);

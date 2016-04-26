@@ -1,0 +1,39 @@
+body {
+    background-color: lightblue;
+} 
+
+h1{
+	color: #00695c;
+	font-weight: bold;
+	text-align: center;
+}
+
+#close{
+	margin:15px;
+	font-size: 48px;
+	
+}
+
+#text{
+	margin-top: 5px ;
+	margin-left: 20px;
+	margin-right: 15px;
+	font-size: 36px;
+}
+
+#image{
+	margin-top: 5px ;
+	margin-left: 20px;
+	margin-right: 15px;
+	font-size: 36px;
+}
+
+#video{
+	margin-top: 5px ;
+	margin-left: 20px;
+	margin-right: 15px;
+	font-size: 36px;
+}
+.material-icons{
+	color: white;
+}

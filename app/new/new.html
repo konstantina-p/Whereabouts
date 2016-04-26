@@ -8,21 +8,23 @@
 	<script src="https://cdn.firebase.com/js/simple-login/1.6.2/firebase-simple-login.js"></script>
 	<script src="https://cdn.firebase.com/js/client/1.1.0/firebase.js"></script>
 	<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
-	<link rel="stylesheet" href="home\home.css">
+	<link rel="stylesheet" href="new\new.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+	
 </head>
-<body ng-controller="HomeCtrl" >
+<body ng-controller="newCtrl" >
 
 <header class="container">
   <div class="col-sm-5  col-sm-offset-3">
     <h1 class="title"> Whereabouts Screens</h1>
    </div>
    <div class=" col-sm-1 col-sm-offset-2">
-  	<i ng-click="new('/new')" class="material-icons" id="new">add_circle</i>
+  	<i ng-click="close('/home')" class="material-icons" id="close">highlight_off</i>
+  	<i ng-click="text('/text')" class="material-icons" id="text">format_align_left</i>
+  	<i ng-click="image('/image')" class="material-icons" id="image">image</i>
+  	<i ng-click="video('/video')" class="material-icons" id="video">videocam</i>
   </div>
 </header>
-
 
 
 </body>

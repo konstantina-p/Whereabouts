@@ -9,7 +9,7 @@ var app=angular.module('myApp.login', ['ngRoute','firebase'])
   });
 }])
 
-app.controller('loginCtrl', ['$scope', '$firebaseSimpleLogin', '$routeParams', function($scope, $firebaseSimpleLogin, $routeParams) {
+app.controller('loginCtrl', ['$scope', '$firebaseSimpleLogin', "$location", function($scope, $firebaseSimpleLogin, $location) {
     //var Firebase = require("firebase");
 	$scope.SignIn = function(event) {
 	event.preventDefault();  // To prevent form refresh
@@ -27,7 +27,7 @@ app.controller('loginCtrl', ['$scope', '$firebaseSimpleLogin', '$routeParams', f
             // Success callback
             console.log('Authentication successful');
             //redirect to home
-            //$location.path('/home');
+            $location.path('/home');
         }, function(error) {
             // Failure callback
             console.log('Authentication failure');

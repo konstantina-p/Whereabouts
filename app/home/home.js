@@ -9,8 +9,13 @@ angular.module('myApp.home', ['ngRoute'])
   });
 }])
 
-.controller('HomeCtrl', ['$scope', '$location', function($scope, $location) {
+.controller('HomeCtrl', ['$scope', '$rootScope','$location', '$window', function($scope,$rootScope, $location, $window) {
 	console.log("homeCtrl");
+	if ($rootScope.flag ===1){
+		$rootScope.flag =0;
+		$window.location.reload();
+	}
+
 //	$scope.new = function(event){
 //		console.log("new clicked");
 //	}

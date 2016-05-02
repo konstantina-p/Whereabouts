@@ -8,6 +8,7 @@ angular.module('myApp', [
   'myApp.new',
   'myApp.text',
   'myApp.version',
+  'angularModalService',
 ]).
 config(['$routeProvider','$locationProvider', function ($routeProvider, $locationProvider) {
  	$routeProvider.when('/', {
